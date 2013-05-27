@@ -1,0 +1,30 @@
+\BOOKMARK [0][-]{chapter*.2}{Abbildungsverzeichnis}{}% 1
+\BOOKMARK [0][-]{chapter*.3}{Tabellenverzeichnis}{}% 2
+\BOOKMARK [0][-]{chapter.1}{Abstract}{}% 3
+\BOOKMARK [0][-]{chapter.2}{Einf\374hrung}{}% 4
+\BOOKMARK [1][-]{section.2.1}{Begriffsdefinitionen}{chapter.2}% 5
+\BOOKMARK [0][-]{chapter.3}{Bisherige Datensicherung}{}% 6
+\BOOKMARK [1][-]{section.3.1}{Welche Daten werden gesichert?}{chapter.3}% 7
+\BOOKMARK [1][-]{section.3.2}{Wo werden Daten gesichert?}{chapter.3}% 8
+\BOOKMARK [1][-]{section.3.3}{Wie oft werden Daten gesichert?}{chapter.3}% 9
+\BOOKMARK [0][-]{chapter.4}{Einf\374hrung in die TRUMPF Telepr\344senz Plattform}{}% 10
+\BOOKMARK [1][-]{section.4.1}{Verf\374gbarkeit}{chapter.4}% 11
+\BOOKMARK [1][-]{section.4.2}{M\366glichkeiten}{chapter.4}% 12
+\BOOKMARK [1][-]{section.4.3}{Restriktionen}{chapter.4}% 13
+\BOOKMARK [1][-]{section.4.4}{Besonderheiten}{chapter.4}% 14
+\BOOKMARK [0][-]{chapter.5}{Cloud-basiertes Datensicherungskonzept}{}% 15
+\BOOKMARK [1][-]{section.5.1}{Auswahl der Daten}{chapter.5}% 16
+\BOOKMARK [2][-]{subsection.5.1.1}{Welche Daten werden gesichert?}{section.5.1}% 17
+\BOOKMARK [2][-]{subsection.5.1.2}{Welche Daten werden nicht gesichert?}{section.5.1}% 18
+\BOOKMARK [1][-]{section.5.2}{Wo werden ausgew\344hlte Daten gesichert?}{chapter.5}% 19
+\BOOKMARK [1][-]{section.5.3}{Wie oft werden Daten gesichert?}{chapter.5}% 20
+\BOOKMARK [2][-]{subsection.5.3.1}{Nach Regeln}{section.5.3}% 21
+\BOOKMARK [2][-]{subsection.5.3.2}{Nach Zeit}{section.5.3}% 22
+\BOOKMARK [1][-]{section.5.4}{Sicherheitsanforderungen}{chapter.5}% 23
+\BOOKMARK [1][-]{section.5.5}{Ablauf der Sicherung}{chapter.5}% 24
+\BOOKMARK [1][-]{section.5.6}{Ablauf des Zur\374ckspeicherns}{chapter.5}% 25
+\BOOKMARK [0][-]{chapter.6}{M\366gliche Gesch\344ftsmodelle}{}% 26
+\BOOKMARK [0][-]{chapter.7}{Umsetzung}{}% 27
+\BOOKMARK [1][-]{section.7.1}{Vorstellung des Prototypen}{chapter.7}% 28
+\BOOKMARK [0][-]{chapter.8}{Ausblick}{}% 29
+\BOOKMARK [0][-]{chapter.9}{Glossar}{}% 30

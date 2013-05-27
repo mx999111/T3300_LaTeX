@@ -1,0 +1,139 @@
+\documentclass[fontsize=12pt, paper=a4, twoside=false, numbers=noenddot, toc=listof, toc=bibliography]{scrreprt}
+
+% Allgemeines
+\usepackage[automark]{scrpage2} % Kopf- und Fußzeilen
+\usepackage{amsmath,marvosym} % Mathematik
+\usepackage[T1]{fontenc} % Ligaturen, richtige Umlaute im PDF
+\usepackage[utf8]{inputenc}% UTF8-Kodierung für Umlaute usw
+
+% Schriften
+\usepackage{mathpazo} % Palatino für Mathemodus
+\usepackage{setspace} % Zeilenabstand
+\onehalfspacing % 1,5 Zeilen
+
+% Schriften-Größen
+\setkomafont{chapter}{\Huge\rmfamily} % Überschrift der Ebene
+\setkomafont{section}{\Large\rmfamily}
+\setkomafont{subsection}{\large\rmfamily}
+\setkomafont{subsubsection}{\large\rmfamily}
+\setkomafont{chapterentry}{\large\rmfamily} % Überschrift der Ebene in Inhaltsverzeichnis
+\setkomafont{descriptionlabel}{\bfseries\rmfamily} % für description Umgebungen
+\setkomafont{captionlabel}{\small\bfseries}
+\setkomafont{caption}{\small}
+
+%Zitate (jurabib)
+\usepackage{jurabib}
+
+\jurabibsetup{
+	commabeforerest,
+	ibidem=strict,
+	citefull=all, %first als Standard
+	see,
+	titleformat={colonsep,all},
+	authorformat=year
+}
+\renewcommand*{\jbauthorfont}{\textsc}
+\renewcommand*{\biblnfont}{\scshape\textbf}
+\renewcommand*{\bibfnfont}{\normalfont\textbf}
+
+% Sprache: Deutsch
+\usepackage[ngerman,pdfauthor={Max Hesselbarth},  pdfauthor={Max Hesselbarth}, pdftitle={T3300_6140175}]{hyperref}
+
+% PDF
+\usepackage[final]{microtype} % mikrotypographische Optimierungen
+\usepackage{url}
+\usepackage{pdflscape} % einzelne Seiten drehen können
+
+% Tabellen
+\usepackage{multirow} % Tabellen-Zellen über mehrere Zeilen
+\usepackage{multicol} % mehre Spalten auf eine Seite
+\usepackage{tabularx} % Für Tabellen mit vorgegeben Größen
+\usepackage{longtable} % Tabellen über mehrere Seiten
+\usepackage{array}
+
+% Umlaute
+\usepackage{bibgerm} % Umlaute in BibTeX
+
+% Tabellen
+\usepackage{multirow} % Tabellen-Zellen über mehrere Zeilen
+\usepackage{multicol} % mehre Spalten auf eine Seite
+\usepackage{tabularx} % Für Tabellen mit vorgegeben Größen
+\usepackage{array}
+\usepackage{float}
+
+% Bilder
+\usepackage{graphicx}
+\makeatletter
+\def\ScaleIfNeeded{%
+	\ifdim\Gin@nat@width>\linewidth
+	\linewidth
+	\else
+	\Gin@nat@width
+	\fi
+}
+\makeatother
+\usepackage{color} % Farben
+\graphicspath{{images/}}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg} % bevorzuge pdf-Dateien
+\usepackage{subfigure} % mehrere Abbildungen nebeneinander/übereinander
+\newcommand{\subfigureautorefname}{\figurename} % um \autoref auch für subfigures benutzen
+\usepackage[all]{hypcap} % Beim Klicken auf Links zum Bild und nicht zu Caption gehen
+
+% Bildunterschrift
+\setcapindent{0em} % kein Einrücken der Caption von Figures und Tabellen
+\setcapwidth[c]{0.9\textwidth}
+\setlength{\abovecaptionskip}{0.2cm} % Abstand der zwischen Bild- und Bildunterschrift
+
+% Quellcode
+\usepackage{listings} % für Formatierung in Quelltexten
+\definecolor{grau}{gray}{0.25}
+\definecolor{darkgreen}{RGB}{0,140,0}
+\definecolor{darkred}{RGB}{140,0,0}
+\lstset{
+	language=Java,
+	frame=lines,
+	extendedchars=true,
+	basicstyle=\tiny\ttfamily,
+	%basicstyle=\footnotesize\ttfamily,
+	tabsize=2,
+	keywordstyle=\color{blue},
+	commentstyle=\color{darkgreen},
+	stringstyle=\color{darkred},
+	numbers=left,
+	numberstyle=\tiny,
+	% für Zeilenumbruch
+	breakautoindent  = true,
+	breakindent      = 0em,
+	breaklines       = true,
+	postbreak        = ,
+	prebreak         = \raisebox{-.8ex}[0ex][0ex]{\Righttorque},
+}
+
+% linksbuendige Fussnoten
+\deffootnote{1.5em}{1em}{\makebox[1.5em][l]{\thefootnotemark}}
+\typearea{14} % typearea am Schluss berechnen lassen, damit die Einstellungen oben beruecksichtigt werden
+% für autoref von Gleichungen in itemize-Umgebungen
+\makeatletter
+\newcommand{\saved@equation}{}
+\let\saved@equation\equation
+\def\equation{\@hyper@itemfalse\saved@equation}
+\makeatother 
+
+\usepackage[justification=justified, singlelinecheck=false, labelfont={bf,small,sf}, font={small,sf}, aboveskip=0.5cm,belowskip=0em]{caption}
+
+\usepackage[xindy]{glossaries}
+
+% Abstand vor Chapter verkleinern
+\renewcommand*{\chapterheadstartvskip}{\vspace*{-\topskip}} %weniger Abstand vor chapter 
+\renewcommand*{\chapterheadendvskip}{\vspace{0.7cm}} %weniger Abstand nach chapter
+
+% Neue Befehle
+\newcommand{\todo}[1]{
+      {\colorbox{red}{ TODO: #1 }}
+}
+\newcommand{\info}[1]{
+      {\colorbox{blue}{ (INFO: #1)}}
+}
+\newcommand{\code}[1]{
+      {\ttfamily{#1}}
+}

@@ -1,0 +1,42 @@
+%Einstellungen importieren
+\input{settings.tex} 
+             
+\begin{document}
+
+	%Dokumenteneinstellungen
+	\pagenumbering{arabic}
+	\pagestyle{plain}
+	\parindent 0pt
+
+	%Cover
+	\input{_chapters/00_cover.tex}	
+	
+	%Inhaltsverzeichnis
+	\tableofcontents 
+	%Abbildungsverzeichnis
+	\listoffigures
+	%Tabellenverzeichnis
+	\listoftables
+	
+	%Abstract
+	\input{_chapters/01_abstract.tex}
+	%Einfuehrung
+	\input{_chapters/02_einfuehrung.tex}
+	%Bisherige Datensicherung
+	\input{_chapters/03_bisherigeSicherung.tex}
+	%Telepraesenz Plattform
+	\input{_chapters/04_telepraesenzPlattform.tex}
+	%Cloud-basiertes Datensicherungskonzept
+	\input{_chapters/05_cloudSicherung.tex}
+	%Geschaeftsmodelle
+	\input{_chapters/06_geschaeftsmodelle.tex}
+	%Umsetzung
+	\input{_chapters/07_umsetzung.tex}
+	%Ausblick
+	\input{_chapters/08_ausblick.tex}
+	%Literaturverzeichnis
+	\input{_chapters/09_literatur.tex}
+	%Glossar
+	\input{_chapters/10_glossar.tex}
+	
+\end{document}
